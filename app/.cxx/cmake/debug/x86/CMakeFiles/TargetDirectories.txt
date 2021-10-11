@@ -1,0 +1,3 @@
+/Volumes/work_dev/projects/Demo/app/.cxx/cmake/debug/x86/CMakeFiles/rebuild_cache.dir
+/Volumes/work_dev/projects/Demo/app/.cxx/cmake/debug/x86/CMakeFiles/edit_cache.dir
+/Volumes/work_dev/projects/Demo/app/.cxx/cmake/debug/x86/CMakeFiles/native-lib.dir
