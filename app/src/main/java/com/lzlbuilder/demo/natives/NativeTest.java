@@ -10,4 +10,5 @@ public class NativeTest {
 
     public native String stringFromJNI();
     public static native String stringFromJNIStatic();
+    public native String getLine(String prompt);
 }

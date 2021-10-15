@@ -1,0 +1,35 @@
+ninja: Entering directory `E:\projects\Demo\app\.cxx\cmake\debug\armeabi-v7a'
+[1/2] Building C object CMakeFiles/native-lib.dir/native-lib.c.o
+E:/projects/Demo/app/src/main/cpp/native-lib.c:47:9: warning: incompatible pointer types assigning to 'const long *' from 'const char *' [-Wincompatible-pointer-types]
+    str = (*env)->GetStringUTFChars(env, prompt, &isCp);
+        ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/projects/Demo/app/src/main/cpp/native-lib.c:52:9: warning: implicitly declaring library function 'strcpy' with type 'char *(char *, const char *)' [-Wimplicit-function-declaration]
+        strcpy(str, "12345");
+        ^
+E:/projects/Demo/app/src/main/cpp/native-lib.c:52:9: note: include the header <string.h> or explicitly provide a declaration for 'strcpy'
+E:/projects/Demo/app/src/main/cpp/native-lib.c:52:16: warning: incompatible pointer types passing 'const long *' to parameter of type 'char *' [-Wincompatible-pointer-types]
+        strcpy(str, "12345");
+               ^~~
+E:/projects/Demo/app/src/main/cpp/native-lib.c:53:27: warning: format specifies type 'int' but the argument has type 'const long *' [-Wformat]
+        LOGI("str: %d\n", str);
+                   ~~     ^~~
+E:/projects/Demo/app/src/main/cpp/native-lib.c:14:65: note: expanded from macro 'LOGI'
+#define LOGI(...)  __android_log_print(ANDROID_LOG_INFO,LOG_TAG,__VA_ARGS__)
+                                                                ^~~~~~~~~~~
+E:/projects/Demo/app/src/main/cpp/native-lib.c:54:30: warning: format specifies type 'int' but the argument has type 'jstring' (aka 'void *') [-Wformat]
+        LOGI("prompt: %d\n", prompt);
+                      ~~     ^~~~~~
+E:/projects/Demo/app/src/main/cpp/native-lib.c:14:65: note: expanded from macro 'LOGI'
+#define LOGI(...)  __android_log_print(ANDROID_LOG_INFO,LOG_TAG,__VA_ARGS__)
+                                                                ^~~~~~~~~~~
+E:/projects/Demo/app/src/main/cpp/native-lib.c:56:16: warning: format specifies type 'char *' but the argument has type 'const long *' [-Wformat]
+    LOGI("%s", str);
+          ~~   ^~~
+E:/projects/Demo/app/src/main/cpp/native-lib.c:14:65: note: expanded from macro 'LOGI'
+#define LOGI(...)  __android_log_print(ANDROID_LOG_INFO,LOG_TAG,__VA_ARGS__)
+                                                                ^~~~~~~~~~~
+E:/projects/Demo/app/src/main/cpp/native-lib.c:57:48: warning: incompatible pointer types passing 'const long *' to parameter of type 'const char *' [-Wincompatible-pointer-types]
+    (*env)->ReleaseStringUTFChars(env, prompt, str);
+                                               ^~~
+7 warnings generated.
+[2/2] Linking C shared library E:\projects\Demo\app\build\intermediates\cmake\debug\obj\armeabi-v7a\libnative-lib.so
